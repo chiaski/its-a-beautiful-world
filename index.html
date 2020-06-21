@@ -17,6 +17,7 @@
           <div class="world">
           
               <div class="inner">
+                  <h2 id="place"></h2>
               <p>hello!</p>
             </div>
           </div>
@@ -30,7 +31,10 @@
   <script type="text/javascript">
    function autorun()
    {
-    
+    const queryString = window.location.search.substring(1);
+    console.log(queryString);
+       $("#place").text(queryString);
+       
    }
    if (document.addEventListener) document.addEventListener("DOMContentLoaded", autorun, false);
    else if (document.attachEvent) document.attachEvent("onreadystatechange", autorun);
