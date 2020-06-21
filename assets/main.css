@@ -27,3 +27,10 @@ html { font-family: 'Inter', sans-serif; }
     padding:1em;
     box-sizing: border-box;
 }
+
+#land{
+    outline:1px solid green;
+    box-sizing: border-box;
+    padding:1em;
+    text-align: center;
+}

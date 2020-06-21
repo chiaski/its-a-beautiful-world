@@ -1,6 +1,6 @@
 
 
-
+// picks random element from list
 
 function rand(items) {
     return items[~~(items.length * Math.random())];
@@ -24,7 +24,7 @@ function generate_land(size, type){
         var landscape = "";
         
         // 8 = horizontal length of world
-        for(let i = 0; i < 8; i++){
+        for(let i = 0; i < 16; i++){
 
             if(0.1 < Math.random() < 0.2){
                 landscape += rand(trees);
