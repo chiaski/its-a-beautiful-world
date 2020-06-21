@@ -16,7 +16,8 @@ var flowers = ["🌺", "🌼", "🌹","🌸"];
 
 function generate_land(size, type){
     
-    console.log(Math.random());
+    var num = Math.random()
+    //console.log(num);
     
     // size = vertical lines of world
     for(let j = 0; j < size; j++){
@@ -24,14 +25,19 @@ function generate_land(size, type){
         var landscape = "";
         
         // 8 = horizontal length of world
-        for(let i = 0; i < 16; i++){
+        for(let i = 0; i < 12; i++){
 
-            if(0.1 < Math.random() < 0.2){
+            var num = Math.random();
+            
+            if(0.1 < num && num < 0.15){
                 landscape += rand(trees);
-            } else{
+            } else if(0 < num && num < 0.05){
+                console.log(num);
+                landscape += rand(flowers);
+            }
+            else{
                 landscape += " ";
             }
-            
 
         }
                
