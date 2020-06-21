@@ -1,0 +1,21 @@
+#earth{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    min-height: 100%;
+}
+
+.world{
+    display: flex;
+    justify-content: center;
+    margin:1em;
+    box-sizing: border-box;
+}
+
+.inner{
+    width:50%;
+    outline:1px solid red;
+    padding:1em;
+    box-sizing: border-box;
+}
