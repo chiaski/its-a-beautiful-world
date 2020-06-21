@@ -10,19 +10,26 @@ html { font-family: 'Inter', sans-serif; }
     left:0;
     width:100%;
     min-height: 100%;
-    
     font-size:.8em;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .world{
     display: flex;
     justify-content: center;
     margin:1em;
+    width:100%;
+    height:50%;
     box-sizing: border-box;
 }
 
 .inner{
-    width:50%;
+    width:80%;
+    max-width: 600px;
     outline:1px solid red;
     padding:1em;
     box-sizing: border-box;
@@ -33,4 +40,5 @@ html { font-family: 'Inter', sans-serif; }
     box-sizing: border-box;
     padding:1em;
     text-align: center;
+    letter-spacing:.2em;
 }
