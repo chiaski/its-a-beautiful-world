@@ -1,9 +1,17 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
 #earth{
     position: absolute;
     top:0;
     left:0;
     width:100%;
     min-height: 100%;
+    
+    font-size:.8em;
 }
 
 .world{
