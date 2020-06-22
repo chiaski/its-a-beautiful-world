@@ -1,4 +1,17 @@
 
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAy3Ug8fGXOWF9X3avG89f0kCl5Ah9I0Ck",
+    authDomain: "a-beautiful-world-e57be.firebaseapp.com",
+    databaseURL: "https://a-beautiful-world-e57be.firebaseio.com",
+    projectId: "a-beautiful-world-e57be",
+    storageBucket: "a-beautiful-world-e57be.appspot.com",
+    messagingSenderId: "731337683506",
+    appId: "1:731337683506:web:b99c41b8a9649d7a6b022b"
+  };
+  // Initialize Firebase
+
+  firebase.initializeApp(firebaseConfig);
 
 // picks random element from list
 
@@ -9,6 +22,7 @@ function rand(items) {
 
 /* THE WORLD */
 
+var database = firebase.database();
 
 var trees = ["🌲", "🌳"];
 var flowers = ["🌺", "🌼", "🌹","🌸"];
@@ -25,14 +39,13 @@ function generate_land(size, type){
         var landscape = "";
         
         // 8 = horizontal length of world
-        for(let i = 0; i < 12; i++){
+        for(let i = 0; i < 20; i++){
 
             var num = Math.random();
             
-            if(0.1 < num && num < 0.15){
+            if(0.1 < num && num < 0.13){
                 landscape += rand(trees);
-            } else if(0 < num && num < 0.05){
-                console.log(num);
+            } else if(0 < num && num < 0.02){
                 landscape += rand(flowers);
             }
             else{
@@ -53,3 +66,4 @@ function generate_land(size, type){
 
 generate_land(10);
 $("#land").text();
+
