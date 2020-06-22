@@ -59,11 +59,23 @@ function generate_land(size, type){
         
     }
                
-               
-    
+            
 }
 
 
 generate_land(10);
 $("#land").text();
 
+const queryString = window.location.search.substring(1);
+console.log(queryString);
+$("#place").text(queryString);
+
+function writeUserData(world, text) {
+  database.ref('places/' + world).set({
+    text: text,
+  });
+}
+
+if(queryString){
+    writeUserData(queryString, $("#land").text());
+}
