@@ -1,2 +1,2 @@
 # its-a-beautiful-world
-a game about tiny worlds
+an experience over tiny worlds
